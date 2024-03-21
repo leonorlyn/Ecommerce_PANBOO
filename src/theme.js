@@ -6,7 +6,7 @@ const rawTheme = createTheme({
     primary: {
       light: 'rgba(68, 100, 92, 0.9)',
       main: '#004B49', //
-      dark: '#1e1e1f',
+      dark: '#00241b',
     },
     secondary: {
       light: '#EEDD82',

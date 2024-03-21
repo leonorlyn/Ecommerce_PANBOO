@@ -4,7 +4,7 @@ import Typography from '../components/Typography';
 import ProductHeroLayout from '../elements/ProductHeroLayout';
 import TypewriterEffect from '../function/TypewriterEffect';
 import NavBar from '../elements/NavBar';
-import WhyPanboo from '../elements/ProductValues';
+import WhyPanboo from '../elements/WhyPanboo';
 
 const backgroundImage =
   'https://images.unsplash.com/photo-1586581277029-5769487f3881?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
@@ -62,7 +62,7 @@ export default function ProductHero() {
         explore more
       </Button>
     </ProductHeroLayout>
-    {/* <WhyPanboo/> */}
+    <WhyPanboo/>
     </React.Fragment>
   );
 }
