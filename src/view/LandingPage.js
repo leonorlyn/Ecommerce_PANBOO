@@ -9,7 +9,7 @@ import WhyPanboo from '../elements/WhyPanboo';
 const backgroundImage =
   'https://images.unsplash.com/photo-1586581277029-5769487f3881?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D';
 
-export default function ProductHero() {
+export default function LandingPage() {
   return (
     <React.Fragment>
     
@@ -41,14 +41,14 @@ export default function ProductHero() {
     />
       <Typography color="inherit" align="center" variant="h2" marked="center">
       </Typography>
-      <Typography
+      {/* <Typography
         color="inherit"
         align="center"
         variant="h4"
         sx={{ mb: 8, mt: { xs: 4, sm: 10 } }}
       >
-        Empower old plants with new value Introduce innovative solutions to building industry
-      </Typography>
+        Empower Bamboo with new value Introduce innovative solutions to building industry
+      </Typography> */}
 
       
       <Button
@@ -57,9 +57,9 @@ export default function ProductHero() {
         size="large"
         component="a"
         href="/premium-themes/onepirate/sign-up/"
-        sx={{ minWidth: 200 }}
+        sx={{ minWidth: 200, mt: 10}}
       >
-        explore more
+        Explore
       </Button>
     </ProductHeroLayout>
     <WhyPanboo/>

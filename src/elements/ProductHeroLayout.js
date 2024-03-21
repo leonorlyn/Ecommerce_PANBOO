@@ -22,7 +22,7 @@ const ProductHeroLayoutRoot = styled('section')(({ theme }) => ({
   alignItems: 'center',
   [theme.breakpoints.up('sm')]: {
     height: '80vh',
-    minHeight: 900,
+    minHeight: 950,
     maxHeight: 1300,
   },
 }));
@@ -31,7 +31,7 @@ const Background = styled('div')({
   position: 'absolute',
   left: 0,
   right: 0,
-  top: '-64px',
+  top: 0,
   bottom: 0,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
@@ -57,8 +57,8 @@ function ProductHeroLayout(props) {
     <Typography
       component="h1"
       sx={{ 
-        mt: 2, 
-        mb: 2,
+        mt: 6, 
+        mb: 0,
         fontWeight: 'bold',
         fontSize: '10rem',
         animation: 'fadein 2s forwards', 

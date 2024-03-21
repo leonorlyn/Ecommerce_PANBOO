@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ProductHero from './view/ProductHero';
+import LandingPage from './view/LandingPage';
 import withRoot from './withRoot';
-import AboutUs from './view/AboutUs';
+import AboutUsPage from './view/AboutUsPage';
+import WhyPanbooPage from './view/WhyPanbooPage';
 // import Contact from './view/Contact';
 
 function App() {
@@ -10,8 +11,9 @@ function App() {
     <Router>
       <React.Fragment>
         <Routes>
-          <Route path="/" element={<ProductHero />} />
-          <Route path="/about" element={<AboutUs />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/why-panboo" element={<WhyPanbooPage />} />
           {/* <Route path="/contact" element={<Contact />} />  */}
         </Routes>
       </React.Fragment>
