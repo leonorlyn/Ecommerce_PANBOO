@@ -10,20 +10,22 @@ const rightLink = {
   ml: 3,
 };
 
-function AppAppBar() {
+function NavBar() {
   return (
     <div>
-      <AppBar position="fixed">
+      <AppBar position="fixed" sx={{ backgroundColor: 'rgba(68, 100, 92, 0.1)' }}> 
         <Toolbar sx={{ justifyContent: 'space-between' }}>
-          <Box sx={{ flex: 1 }} />
+          {/* <Box sx={{ flex: 1 }} /> */}
           <Link
             variant="h6"
             underline="none"
             color="inherit"
-            href="/premium-themes/onepirate/"
-            sx={{ fontSize: 24 }}
+            href="/"
+            sx={{ 
+              fontSize: 35,
+              fontFamily: "Stick No Bills"}}
           >
-            {'onepirate'}
+            {'PANBOO'}
           </Link>
           <Box sx={{ flex: 1, display: 'flex', justifyContent: 'flex-end' }}>
             <Link
@@ -51,4 +53,4 @@ function AppAppBar() {
   );
 }
 
-export default AppAppBar;
+export default NavBar;

@@ -4,14 +4,14 @@ import { green, grey, red } from '@mui/material/colors';
 const rawTheme = createTheme({
   palette: {
     primary: {
-      light: '#69696a',
-      main: '#28282a',
+      light: 'rgba(68, 100, 92, 0.9)',
+      main: '#004B49', //
       dark: '#1e1e1f',
     },
     secondary: {
-      light: '#fff5f8',
+      light: '#EEDD82',
       main: '#FFD700',
-      dark: '#e62958',
+      dark: '#EEB422',
     },
     warning: {
       main: '#ffc071',

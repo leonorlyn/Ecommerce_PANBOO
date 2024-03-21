@@ -4,26 +4,17 @@ import { styled } from '@mui/material/styles';
 import Typography from '../components/Typography';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
-import { GlobalStyles } from '@mui/system';
 
-const globalStyles = (
-  <GlobalStyles styles={{
-    '@keyframes fadein': {
-      '0%': { opacity: 0 },
-      '100%': { opacity: 1 },
-    },
-  }} />
-);
 
-const ProductHeroLayoutRoot = styled('section')(({ theme }) => ({
+const HeaderRoot = styled('section')(({ theme }) => ({
   color: theme.palette.common.white,
   position: 'relative',
   display: 'flex',
   alignItems: 'center',
   [theme.breakpoints.up('sm')]: {
     height: '80vh',
-    minHeight: 900,
-    maxHeight: 1300,
+    minHeight: 100,
+    maxHeight: 400,
   },
 }));
 
@@ -31,24 +22,23 @@ const Background = styled('div')({
   position: 'absolute',
   left: 0,
   right: 0,
-  top: 0,
+  top: '-64px',
   bottom: 0,
   backgroundSize: 'cover',
   backgroundRepeat: 'no-repeat',
   zIndex: -2,
 });
 
-function ProductHeroLayout(props) {
+function Header(props) {
   const { sxBackground, children } = props;
 
   return (
     <>
-    {globalStyles}
-    <ProductHeroLayoutRoot>
+    <HeaderRoot>
       <Container
         sx={{
           mt: 3,
-          mb: 14,
+          mb: 5,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
@@ -60,12 +50,10 @@ function ProductHeroLayout(props) {
         mt: 2, 
         mb: 2,
         fontWeight: 'bold',
-        fontSize: '10rem',
-        animation: 'fadein 2s forwards', 
-        fontFamily: "Stick No Bills"
+        fontSize: '8em',
       }}
     >
-      PANBOO
+      About Us
     </Typography>
         {children}
         <Box
@@ -82,12 +70,12 @@ function ProductHeroLayout(props) {
         />
         <Background sx={sxBackground} />
       </Container>
-    </ProductHeroLayoutRoot>
+    </HeaderRoot>
     </>
   );
 }
 
-ProductHeroLayout.propTypes = {
+Header.propTypes = {
   children: PropTypes.node,
   sxBackground: PropTypes.oneOfType([
     PropTypes.arrayOf(
@@ -98,4 +86,4 @@ ProductHeroLayout.propTypes = {
   ]),
 };
 
-export default ProductHeroLayout;
+export default Header;
