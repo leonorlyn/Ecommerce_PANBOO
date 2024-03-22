@@ -14,9 +14,9 @@ const AboutUsPage = () => (
     
     {/* <Story /> */}
     <Header
+      title = "About Us"
       sxBackground={{
         backgroundImage: `url(${backgroundImage})`,
-        backgroundColor: '#7fc7d9', // Average color of the background image.
         backgroundPosition: 'center',
       }} />
     <NavBar />

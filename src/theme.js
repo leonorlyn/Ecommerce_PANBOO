@@ -95,7 +95,9 @@ const theme = {
     body1: {
       ...rawTheme.typography.body2,
       fontWeight: rawTheme.typography.fontWeightRegular,
-      fontSize: 16,
+      lineHeight: '1.4',
+      textAlign: 'justify',
+      fontSize: 20,
     },
     body2: {
       ...rawTheme.typography.body1,

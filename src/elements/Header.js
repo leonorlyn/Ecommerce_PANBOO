@@ -30,7 +30,7 @@ const Background = styled('div')({
 });
 
 function Header(props) {
-  const { sxBackground, children } = props;
+  const { sxBackground, children, title = "Default Title" } = props;
 
   return (
     <>
@@ -45,17 +45,17 @@ function Header(props) {
         }}
       >
     <Typography
-      component="h1"
+      // component="h4"
       sx={{ 
-        mt: 2, 
+        mt: 4, 
         mb: 2,
         fontWeight: 'bold',
-        fontSize: '8em',
+        fontSize: '5em',
       }}
     >
-      About Us
+      {title}
     </Typography>
-        {children}
+      {children}
         <Box
           sx={{
             position: 'absolute',

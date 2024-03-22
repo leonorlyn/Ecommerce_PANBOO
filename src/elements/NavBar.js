@@ -58,12 +58,12 @@ const NavBar = () => {
               anchorEl={aboutAnchorEl} // Changed to aboutAnchorEl
               keepMounted
               open={Boolean(aboutAnchorEl)} // Changed to check aboutAnchorEl
-              onClose={handleClose}
+              onClose={handleClose} 
             >
               <MenuItem onClick={handleClose} component={Link} href="/about-us">
                 About Us
               </MenuItem>
-              <MenuItem onClick={handleClose} component={Link} href="/why-panboo">
+              <MenuItem onClick={handleClose} component={Link} href="/why-bamboo">
                 Sustainability
               </MenuItem>
               <MenuItem onClick={handleClose} component={Link} href="/our-manufacturing-process">
@@ -85,10 +85,10 @@ const NavBar = () => {
               onClose={handleClose}
             >
               <MenuItem onClick={handleClose} component={Link} href="/products-list">
-                Product Catalogue
+                Our Creations
               </MenuItem>
               <MenuItem onClick={handleClose} component={Link} href="/cases">
-                Sample Cases
+                Case Highlights
               </MenuItem>
             </Menu>
 
