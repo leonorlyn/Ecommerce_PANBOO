@@ -66,9 +66,6 @@ const NavBar = () => {
               <MenuItem onClick={handleClose} component={Link} href="/why-bamboo">
                 Sustainability
               </MenuItem>
-              <MenuItem onClick={handleClose} component={Link} href="/our-manufacturing-process">
-                Meet the Team
-              </MenuItem>
             </Menu>
 
             <Button

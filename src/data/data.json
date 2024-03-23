@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "image": "image_url_1",
+      "title": "Natural Wood Basic Starter Pack",
+      "color": "Natural Wood",
+      "pattern": "Fine Grooves",
+      "size": "18mm × 250mm × 1800mm",
+      "price": "399"
+    },
+    {
+      "id": 2,
+      "image": "image_url_2",
+      "title": "Light Coffee Premium Suit",
+      "color": "Light Coffee",
+      "pattern": "Prominent Waves",
+      "size": "25mm × 250mm × 1800mm",
+      "price": "1399"
+    }
+  ]
+  

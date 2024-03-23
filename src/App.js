@@ -5,6 +5,7 @@ import withRoot from './withRoot';
 import AboutUsPage from './view/AboutUsPage';
 import WhyPanbooPage from './view/WhyPanbooPage';
 import WhyBambooPage from './view/WhyBamboo';
+import OurCreationPage from './view/OurCreationsPage';
 
 // import Contact from './view/Contact';
 
@@ -17,6 +18,8 @@ function App() {
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/why-panboo" element={<WhyPanbooPage />} />
           <Route path="/why-bamboo" element={<WhyBambooPage />} />
+          <Route path="/products-list" element={<OurCreationPage />} />
+          
           {/* <Route path="/contact" element={<Contact />} />  */}
         </Routes>
       </React.Fragment>
