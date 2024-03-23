@@ -19,7 +19,7 @@ const WhyBambooRoot = styled('section')(({ theme }) => ({
 }));
 
 const WhyBamboo = () => {
-    const imageUrl1 = "whybamboo1.jpg"; 
+    const imageUrl1 = "whybamboo1.JPG"; 
     const imageUrl2 = "https://images.unsplash.com/photo-1698139997949-cabc360cd5d6?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
     const imageUrl3 = "whybamboo3.png"; 
 
