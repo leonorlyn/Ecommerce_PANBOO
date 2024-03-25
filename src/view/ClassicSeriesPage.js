@@ -4,7 +4,7 @@ import NavBar from '../elements/NavBar';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import AppFooter from '../elements/AppFooter';
-import ProductPage from '../elements/ProductPage';
+import ClassicProductPage from '../elements/ClassicProductPage';
 import ClassicBanner from '../elements/ClassicBanner';
 
 
@@ -23,7 +23,7 @@ const OurCreationPage = () => {
     return(
         <React.Fragment>
             <Header
-                title="Our Creations"
+                title="Classic Series"
                 sxBackground={{
                     backgroundImage: `url(${backgroundImage})`,
                     backgroundPosition: 'center',
@@ -31,7 +31,7 @@ const OurCreationPage = () => {
             <NavBar />
             <ClassicBanner scrollToProductPage={scrollToProductPage} />
             <Container maxWidth="lg" ref={productPageRef}>       
-            <ProductPage/>
+            <ClassicProductPage/>
             </Container>
             <AppFooter />
         </React.Fragment>

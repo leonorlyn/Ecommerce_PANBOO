@@ -81,8 +81,11 @@ const NavBar = () => {
               open={Boolean(productsAnchorEl)} // Changed to check productsAnchorEl
               onClose={handleClose}
             >
+              <MenuItem onClick={handleClose} component={Link} href="/classic-list">
+                Classic Series
+              </MenuItem>
               <MenuItem onClick={handleClose} component={Link} href="/products-list">
-                Our Creations
+                Unlimited Collection
               </MenuItem>
               <MenuItem onClick={handleClose} component={Link} href="/cases">
                 Case Highlights

@@ -32,7 +32,9 @@ function CategoryFilter({ onFilterChange }) {
       </Accordion>
       <Accordion>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-          <Typography>Patterns</Typography>
+          <Typography>
+            Patterns
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <FormGroup>

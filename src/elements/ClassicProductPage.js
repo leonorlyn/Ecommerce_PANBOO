@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import Grid from '@mui/material/Grid'; // 导入Grid组件
 import ProductGrid from './ProductGrid';
 import CategoryFilter from '../components/CategoryFilter';
-import productsData from '../data/data.json';
+import productsData from '../data/classic_data.json';
 import { Typography, Divider } from '@mui/material';
 
-function ProductPage() {
+function ClassicProductPage() {
   const [products, setProducts] = useState(productsData);
   const [filter, setFilter] = useState({
     color: '',
@@ -38,7 +38,7 @@ function ProductPage() {
         <Typography sx={{ mb:2, fontSize:25, color: 'primary.main',fontWeight:'bold' }}>
         Product List
         </Typography>
-        <Divider sx={{ mb: 2 }} /> {/* 在这里添加分隔线 */}
+        <Divider sx={{ mb: 4 }} /> {/* 在这里添加分隔线 */}
         <CategoryFilter onFilterChange={handleFilterChange} />
       </Grid>
       <Grid item xs={12} sm={8} md={9}>
@@ -48,4 +48,4 @@ function ProductPage() {
   );
 }
 
-export default ProductPage;
+export default ClassicProductPage;

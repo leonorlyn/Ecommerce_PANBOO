@@ -24,7 +24,7 @@ const ClassicBanner = ({ scrollToProductPage }) => {
   const theme = useTheme();
 
   return (
-    <StyledBanner sx={{mt: 5, mb: 10}}>
+    <StyledBanner sx={{mt: 0, mb: 10}}>
       <Box  sx={{ maxWidth:800, width: '100%', p: theme.spacing(3), backgroundColor: 'rgba(255, 255, 255, 0.7)', borderRadius: theme.shape.borderRadius }}>
         <Typography variant="h2" component="h1" gutterBottom>
           The Classic
@@ -34,7 +34,7 @@ const ClassicBanner = ({ scrollToProductPage }) => {
         </Typography>
         <Paper elevation={0} sx={{ p: 2, mb: 2, backgroundColor: 'transparent'}}>
           <Typography variant="body1" color="text.secondary">
-          Crafted from premium bamboo, the PANBOO® Classic range boasts elegant colors and versatility for decking, siding, fencing, and railing, meeting all your design and functional needs.
+          Crafted from superior bamboo, the PANBOO® Classic series features sophisticated colors and adaptable designs for decking, perfectly catering to your aesthetic and practical requirements.
           </Typography>
         </Paper>
         <Button onClick={scrollToProductPage} variant="contained" size="large" sx={{ py: theme.spacing(1), px: theme.spacing(3) }}>
