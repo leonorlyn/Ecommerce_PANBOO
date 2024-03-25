@@ -20,7 +20,7 @@ const StyledBanner = styled(Box)(({ theme }) => ({
   },
 }));
 
-const ClassicBanner = () => {
+const ClassicBanner = ({ scrollToProductPage }) => {
   const theme = useTheme();
 
   return (
@@ -37,7 +37,7 @@ const ClassicBanner = () => {
           Crafted from premium bamboo, the PANBOO® Classic range boasts elegant colors and versatility for decking, siding, fencing, and railing, meeting all your design and functional needs.
           </Typography>
         </Paper>
-        <Button variant="contained" size="large" sx={{ py: theme.spacing(1), px: theme.spacing(3) }}>
+        <Button onClick={scrollToProductPage} variant="contained" size="large" sx={{ py: theme.spacing(1), px: theme.spacing(3) }}>
           Shop Now
         </Button>
       </Box>
