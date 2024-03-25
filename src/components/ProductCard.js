@@ -26,11 +26,6 @@ export function ProductCard({ image, title, color, pattern, size, price }) {
         <Typography variant="subtitle1" color="text.secondary">
           Size: {size}
         </Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', mt: 2 }}>
-          <Typography variant="h6" color="primary">
-            ${price}
-          </Typography>
-        </Box>
       </CardContent>
     </Card>
   );

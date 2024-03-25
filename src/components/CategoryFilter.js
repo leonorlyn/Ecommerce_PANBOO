@@ -1,37 +1,61 @@
 import React from 'react';
-import { FormControl, InputLabel, Select, MenuItem } from '@mui/material';
+import { Accordion, AccordionSummary, AccordionDetails, Typography, Checkbox, FormGroup, FormControlLabel } from '@mui/material';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function CategoryFilter({ onFilterChange }) {
+  const handleCheckboxChange = (type, value) => (event) => {
+    onFilterChange(type, event.target.checked ? value : '');
+  };
+
   return (
     <div>
-      <FormControl fullWidth>
-        <InputLabel>Color</InputLabel>
-        <Select
-          label="Color"
-          defaultValue=""
-          onChange={(e) => onFilterChange('color', e.target.value)}
-        >
-          <MenuItem value="">All Colors</MenuItem>
-          <MenuItem value="Natural Wood">Natural Wood</MenuItem>
-          <MenuItem value="Light Coffee">Light Coffee</MenuItem>
-          <MenuItem value="Dark Charcoal">Dark Charcoal</MenuItem>
-        </Select>
-      </FormControl>
-
-      <FormControl fullWidth sx={{ mt: 2 }}>
-        <InputLabel>Pattern</InputLabel>
-        <Select
-          label="Pattern"
-          defaultValue=""
-          onChange={(e) => onFilterChange('pattern', e.target.value)}
-        >
-          <MenuItem value="">All Patterns</MenuItem>
-          <MenuItem value="Fine Grooves">Fine Grooves</MenuItem>
-          <MenuItem value="Prominent Waves">Prominent Waves</MenuItem>
-          <MenuItem value="Subtle Waves">Subtle Waves</MenuItem>
-          <MenuItem value="Smooth Surface">Smooth Surface</MenuItem>
-        </Select>
-      </FormControl>
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography>Colors</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <FormGroup>
+            <FormControlLabel
+              control={<Checkbox onChange={handleCheckboxChange('color', 'Natural Wood')} />}
+              label="Natural Wood"
+            />
+            <FormControlLabel
+              control={<Checkbox onChange={handleCheckboxChange('color', 'Light Coffee')} />}
+              label="Light Coffee"
+            />
+            <FormControlLabel
+              control={<Checkbox onChange={handleCheckboxChange('color', 'Dark Charcoal')} />}
+              label="Dark Charcoal"
+            />
+          </FormGroup>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion>
+        <AccordionSummary expandIcon={<ExpandMoreIcon />}>
+          <Typography>Patterns</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <FormGroup>
+            <FormControlLabel
+              control={<Checkbox onChange={handleCheckboxChange('pattern', 'Fine Grooves')} />}
+              label="Fine Grooves"
+            />
+            <FormControlLabel
+              control={<Checkbox onChange={handleCheckboxChange('pattern', 'Prominent Waves')} />}
+              label="Prominent Waves"
+            />
+            <FormControlLabel
+              control={<Checkbox onChange={handleCheckboxChange('pattern', 'Subtle Waves')} />}
+              label="Subtle Waves"
+            />
+            <FormControlLabel
+              control={<Checkbox onChange={handleCheckboxChange('pattern', 'Smooth Surface')} />}
+              label="Smooth Surface"
+            />
+          </FormGroup>
+        </AccordionDetails>
+      </Accordion>
+      {/* Repeat for other categories such as 'Size' */}
     </div>
   );
 }

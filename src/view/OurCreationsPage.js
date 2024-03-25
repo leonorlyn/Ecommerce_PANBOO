@@ -1,13 +1,11 @@
 import React from 'react';
-import ProductGrid from '../elements/ProductGrid';
 import Header from '../elements/Header';
 import NavBar from '../elements/NavBar';
 import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import CategoryFilter from '../components/CategoryFilter';
 import AppFooter from '../elements/AppFooter';
 import ProductPage from '../elements/ProductPage';
+import ClassicBanner from '../elements/ClassicBanner';
 
 
       
@@ -20,16 +18,15 @@ const OurCreationPage = () => (
     
     {/* <Story /> */}
     <Header
-        title="Bamboo Sustainability"
+        title="Our Creations"
         sxBackground={{
             backgroundImage: `url(${backgroundImage})`,
             backgroundPosition: 'center',
       }} />
     <NavBar />
+    <ClassicBanner/>
     <Container maxWidth="lg">
-      <Typography variant="h4" component="h1" gutterBottom>
-        Our products
-      </Typography>
+        
       <ProductPage/>
       {/* <Box sx={{ display: 'flex' }}>
         <Box sx={{ width: '250px', mr: 2 }}>

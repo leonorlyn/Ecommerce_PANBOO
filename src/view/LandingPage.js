@@ -64,7 +64,7 @@ export default function LandingPage() {
       </Button>
     </ProductHeroLayout>
     <WhyPanboo/>
-    <Story />
+    {/* <Story /> */}
     </React.Fragment>
   );
 }
