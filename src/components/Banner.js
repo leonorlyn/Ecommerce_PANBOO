@@ -4,7 +4,7 @@ import { styled } from '@mui/system';
 
 const StyledBanner = styled(Box)(({ theme, backgroundImage }) => ({
   position: 'relative',
-  height: '500px', 
+  height: '300px', 
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
@@ -13,22 +13,22 @@ const StyledBanner = styled(Box)(({ theme, backgroundImage }) => ({
   backgroundImage: `url(${backgroundImage})`, // 使用props中的背景图片
   backgroundSize: 'cover',
   backgroundPosition: 'center',
-  padding: theme.spacing(4),
+  padding: theme.spacing(2),
   [theme.breakpoints.down('sm')]: {
     height: 'auto',
-    padding: theme.spacing(2),
+    padding: theme.spacing(1),
   },
-  '&::before': { // 添加伪元素作为蒙版
+  '&::before': { 
     content: '""',
     position: 'absolute',
     top: 0,
     left: 0,
     width: '100%',
     height: '100%',
-    backgroundColor: 'rgba(0, 0, 0, 0.5)', // 蒙版颜色和透明度
-    zIndex: 1, // 确保蒙版在背景图片之上
+    backgroundColor: 'rgba(0, 0, 0, 0.3)', 
+    zIndex: 1, 
   },
-  '& > *': { // 确保子元素在蒙版之上
+  '& > *': { 
     position: 'relative',
     zIndex: 2,
   }

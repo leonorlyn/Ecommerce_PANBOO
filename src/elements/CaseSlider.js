@@ -22,33 +22,35 @@ const SliderComponent = ({ slides }) => {
   };
 
   return (
-    <AwesomeSlider>
-      {slides.map((slide, index) => (
-        <div
-          key={index}
-          data-src={slide.imageUrl}
-          onMouseEnter={() => handleMouseEnter(index)}
-          onMouseLeave={() => handleMouseLeave(index)}
-        >
+    <div style={{ marginBottom: '200px' }}>
+      <AwesomeSlider>
+        {slides.map((slide, index) => (
           <div
-            className="overlay"
-            style={{
-              position: 'absolute',
-              bottom: 0,
-              background: 'rgba(0, 0, 0, 0.2)',
-              color: '#fff',
-              width: '100%',
-              padding: '10px',
-              textAlign: 'left',
-              display: hoverStates[index] ? 'block' : 'none', 
-            }}
+            key={index}
+            data-src={slide.imageUrl}
+            onMouseEnter={() => handleMouseEnter(index)}
+            onMouseLeave={() => handleMouseLeave(index)}
           >
-            <h3>{slide.location}</h3>
-            <p>{slide.description}</p>
+            <div
+              className="overlay"
+              style={{
+                position: 'absolute',
+                bottom: 0,
+                background: 'rgba(0, 0, 0, 0.2)',
+                color: '#fff',
+                width: '100%',
+                padding: '10px',
+                textAlign: 'left',
+                display: hoverStates[index] ? 'block' : 'none', 
+              }}
+            >
+              <h3>{slide.location}</h3>
+              <p>{slide.description}</p>
+            </div>
           </div>
-        </div>
-      ))}
-    </AwesomeSlider>
+        ))}
+      </AwesomeSlider>
+    </div>
   );
 };
 

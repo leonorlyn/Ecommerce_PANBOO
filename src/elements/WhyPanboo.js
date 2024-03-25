@@ -26,7 +26,7 @@ function WhyPanboo() {
       component="section"
       sx={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', bgcolor: 'common.white' }}
     >
-      <Typography variant="h2" sx={{ mt: 20, mb: 5, textAlign: 'center', color: 'primary.main'}}>
+      <Typography variant="h2" marked="center" align="center" component="h2" sx={{ mt: 20, mb: 5,color: 'primary.main'}}>
         Elevate Your Space with PANBOO®
       </Typography>
 
