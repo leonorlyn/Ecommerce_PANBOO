@@ -87,8 +87,8 @@ const NavBar = () => {
               <MenuItem onClick={handleClose} component={Link} href="/products-list">
                 Unlimited Collection
               </MenuItem>
-              <MenuItem onClick={handleClose} component={Link} href="/cases">
-                Case Highlights
+              <MenuItem onClick={handleClose} component={Link} href="/our-work">
+                Our Work
               </MenuItem>
             </Menu>
 

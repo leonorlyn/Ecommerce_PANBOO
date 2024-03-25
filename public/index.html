@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <style>
+      .overlay {
+          position: absolute;
+          bottom: 0;
+          background: rgba(0, 0, 0, 0.2);
+          color: #fff;
+          width: 100%;
+          padding: 20px;
+          text-align: left;
+          /* display: none; 默认不显示 */
+      }
+      .awssld__content:hover .overlay {
+          display: block; 
+      }
+
+  </style>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
