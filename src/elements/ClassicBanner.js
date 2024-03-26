@@ -24,7 +24,7 @@ const ClassicBanner = ({ scrollToProductPage }) => {
   const theme = useTheme();
 
   return (
-    <StyledBanner sx={{mt: 0, mb: 10}}>
+    <StyledBanner sx={{mt: -5, mb: 10}}>
       <Box  sx={{ maxWidth:800, width: '100%', p: theme.spacing(3), backgroundColor: 'rgba(255, 255, 255, 0.7)', borderRadius: theme.shape.borderRadius }}>
         <Typography variant="h2" component="h1" gutterBottom>
           The Classic

@@ -10,7 +10,9 @@ const StyledBanner = styled(Box)(({ theme, backgroundImage }) => ({
   justifyContent: 'center',
   alignItems: 'center',
   textAlign: 'center',
-  backgroundImage: `url(${backgroundImage})`, // 使用props中的背景图片
+  // 条件判断：如果backgroundImage有值，则使用该图片，否则使用白色背景
+  backgroundImage: backgroundImage ? `url(${backgroundImage})` : 'none', 
+  backgroundColor: backgroundImage ? 'none' : '#fff', // 当没有背景图片时使用白色背景
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   padding: theme.spacing(2),
@@ -19,7 +21,7 @@ const StyledBanner = styled(Box)(({ theme, backgroundImage }) => ({
     padding: theme.spacing(1),
   },
   '&::before': { 
-    content: '""',
+    content: backgroundImage ? '""' : 'none', // 当没有背景图片时，不创建遮罩层
     position: 'absolute',
     top: 0,
     left: 0,
@@ -34,17 +36,21 @@ const StyledBanner = styled(Box)(({ theme, backgroundImage }) => ({
   }
 }));
 
-const Banner = ({ backgroundImage, title, description }) => {
+
+const Banner = ({ backgroundImage, subtitle, title, description }) => {
   const theme = useTheme();
 
   return (
-    <StyledBanner sx={{mt: 0, mb: 10}} backgroundImage={backgroundImage}>
+    <StyledBanner sx={{mt: 6, mb: 10}} backgroundImage={backgroundImage}>
       <Box sx={{ maxWidth:800, width: '100%', p: theme.spacing(3), borderRadius: theme.shape.borderRadius }}>
-        <Typography variant="h1" component="h1" gutterBottom color='white'>
+        <Typography variant="h2" component="h1" gutterBottom color='primary.main'>
           {title}
         </Typography>
+        <Typography variant="h5" sx={{ mb: 2 }}>
+          {subtitle}
+        </Typography>
         <Paper elevation={0}  sx={{ p: 2, mb: 2, backgroundColor: 'transparent'}}>
-          <Typography color='white' variant="body1">
+          <Typography color='text.secondary' variant="body1">
             {description}
           </Typography>
         </Paper>

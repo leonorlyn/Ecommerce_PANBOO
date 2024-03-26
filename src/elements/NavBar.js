@@ -105,7 +105,7 @@ const NavBar = () => {
               open={Boolean(innovationAnchorEl)} // Changed to check productsAnchorEl
               onClose={handleClose}
             >
-              <MenuItem onClick={handleClose} component={Link} href="/products-list">
+              <MenuItem onClick={handleClose} component={Link} href="/manufacturing-process">
                 Manufacturing Process
               </MenuItem>
               <MenuItem onClick={handleClose} component={Link} href="/cases">

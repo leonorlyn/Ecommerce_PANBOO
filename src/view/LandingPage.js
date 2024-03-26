@@ -45,16 +45,16 @@ export default function LandingPage() {
     />
       <Typography color="inherit" align="center" variant="h2" marked="center">
       </Typography>
-      <Button
+      {/* <Button
         color="secondary"
         variant="contained"
         size="large"
         component="a"
-        href="/premium-themes/onepirate/sign-up/"
+        href="/about-us"
         sx={{ minWidth: 200, mt: 10}}
       >
         Explore
-      </Button>
+      </Button> */}
       </ProductHeroLayout>
       <WhyPanboo/>
       <OurWorkGallery />

@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '../components/Typography';
+import Button from '../components/Button';
 
 import { motion } from 'framer-motion';
 
@@ -26,7 +27,7 @@ function WhyPanboo() {
       component="section"
       sx={{ display: 'flex', flexDirection: 'column', overflow: 'hidden', bgcolor: 'common.white' }}
     >
-      <Typography variant="h2" marked="center" align="center" component="h2" sx={{ mt: 20, mb: 5,color: 'primary.main'}}>
+      <Typography variant="h2" marked="center" align="center" component="h2" sx={{ mt: 15,color: 'primary.main'}}>
         Elevate Your Space with PANBOO®
       </Typography>
 
@@ -90,6 +91,18 @@ function WhyPanboo() {
               </Typography>
             </Box>
           </Grid>
+          <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%', mt: 10 }}>
+          <Button
+            color="secondary"
+            variant="contained"
+            size="large"
+            component="a"
+            href="/why-panboo"
+            sx={{ minWidth: 200 }}
+          >
+            Explore
+          </Button>
+        </Box>
         </Grid>
       </Container>
     </Box>

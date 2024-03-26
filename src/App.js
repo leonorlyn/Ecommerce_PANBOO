@@ -7,6 +7,7 @@ import WhyPanbooPage from './view/WhyPanbooPage';
 import WhyBambooPage from './view/WhyBamboo';
 import ClassicSeriesPage from './view/ClassicSeriesPage';
 import OurWorkPage from './view/OurWorkPage';
+import ManufacturingProcessPage from './view/ManufacturingProcessPage';
 
 // import Contact from './view/Contact';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/why-bamboo" element={<WhyBambooPage />} />
           <Route path="/classic-list" element={<ClassicSeriesPage />} />
           <Route path="/our-work" element={<OurWorkPage />} />
+          <Route path="/manufacturing-process" element={<ManufacturingProcessPage />} />
           {/* <Route path="/contact" element={<Contact />} />  */}
         </Routes>
       </React.Fragment>

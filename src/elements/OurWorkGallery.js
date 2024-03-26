@@ -78,7 +78,7 @@ const images = [
 
 export default function OurWorkGallery() {
   return (
-    <Container component="section" sx={{ mt: -20, mb: 10 }}>
+    <Container component="section" sx={{ mt: -30, mb: 10 }}>
       <Typography variant="h2" marked="center" align="center" component="h2" sx={{ mt: 20, mb: 5,color: 'primary.main'}}>
         Find Our Featured Work
       </Typography>
