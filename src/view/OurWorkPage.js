@@ -5,8 +5,8 @@ import Container from '@mui/material/Container';
 import AppFooter from '../elements/AppFooter';
 import CaseSlider from '../elements/CaseSlider';
 import Banner from '../components/Banner';
-import CaseData from '../data/case_data.json';
-
+import DeckingData from '../data/decking_pic.json';
+import SidingData from '../data/siding_pic.json';
 
       
 const backgroundImage =
@@ -33,7 +33,7 @@ const OurWorkPage = () => {
             />
             <Container maxWidth="lg">
             <div>
-                <CaseSlider slides={CaseData} />
+                <CaseSlider slides={DeckingData} />
             </div>
             </Container>
 
@@ -45,7 +45,7 @@ const OurWorkPage = () => {
             />
             <Container maxWidth="lg">
             <div>
-                <CaseSlider slides={CaseData} />
+                <CaseSlider slides={SidingData} />
             </div>
             </Container>
 
@@ -57,7 +57,7 @@ const OurWorkPage = () => {
             />
             <Container maxWidth="lg">
             <div>
-                <CaseSlider slides={CaseData} />
+                <CaseSlider slides={DeckingData} />
             </div>
             </Container>
 
@@ -69,7 +69,7 @@ const OurWorkPage = () => {
             />
             <Container maxWidth="lg">
             <div>
-                <CaseSlider slides={CaseData} />
+                <CaseSlider slides={DeckingData} />
             </div>
             </Container>
 

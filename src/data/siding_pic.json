@@ -1,0 +1,33 @@
+[
+    {
+      "imageUrl": "/siding/1.JPG",
+      "location": "XX",
+      "description": "XX"
+    },
+    {
+      "imageUrl": "/siding/2.JPG",
+      "location": "Guangdong, China",
+      "description": "Meizhou Island"
+    },
+    {
+      "imageUrl": "/siding/travel town1.jpg",
+      "location": "Guangdong, China",
+      "description": "Shijiuyong Seafood Market"
+    },
+    {
+      "imageUrl": "/siding/travel town2.jpg",
+      "location": "Seattle, US",
+      "description": "Private Balcony"
+    },
+    {
+      "imageUrl": "/siding/Handan2.jpg",
+      "location": "Guangdong, China",
+      "description": "Shantou Haiming Park"
+    },
+    {
+      "imageUrl": "/siding/2.JPG",
+      "location": "The Hague, the Netherlands",
+      "description": "Private Home"
+    }
+  ]
+  

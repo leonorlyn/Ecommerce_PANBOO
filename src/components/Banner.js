@@ -4,7 +4,7 @@ import { styled } from '@mui/system';
 
 const StyledBanner = styled(Box)(({ theme, backgroundImage }) => ({
   position: 'relative',
-  height: '300px', 
+  height: '500px', 
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
@@ -43,14 +43,14 @@ const Banner = ({ backgroundImage, subtitle, title, description }) => {
   return (
     <StyledBanner sx={{mt: 6, mb: 10}} backgroundImage={backgroundImage}>
       <Box sx={{ maxWidth:800, width: '100%', p: theme.spacing(3), borderRadius: theme.shape.borderRadius }}>
-        <Typography variant="h2" component="h1" gutterBottom color='primary.main'>
+        <Typography color='white' variant="h2" component="h1" gutterBottom >
           {title}
         </Typography>
         <Typography variant="h5" sx={{ mb: 2 }}>
           {subtitle}
         </Typography>
         <Paper elevation={0}  sx={{ p: 2, mb: 2, backgroundColor: 'transparent'}}>
-          <Typography color='text.secondary' variant="body1">
+          <Typography color='white' variant="body1">
             {description}
           </Typography>
         </Paper>
