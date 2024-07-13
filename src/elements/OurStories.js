@@ -12,8 +12,8 @@ const OurStoriesRoot = styled('section')(({ theme }) => ({
   padding: theme.spacing(10), // Add some padding around
   [theme.breakpoints.up('sm')]: {
     flexDirection: 'row', // Arrange side by side on larger screens
-    minHeight: 900,
-    maxHeight: 1500,
+    minHeight: 700,
+    maxHeight: 1200,
   },
 }));
 
@@ -23,7 +23,7 @@ const OurStories = () => {
   return (
     <OurStoriesRoot>
       <FadeInComponent>
-      <Grid container spacing={4} alignItems="center">
+      <Grid container spacing={4} alignItems="center" sx={{mb:-10}}>
         <Grid item xs={12} sm={6}>
           <div
             style={{

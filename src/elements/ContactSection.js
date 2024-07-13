@@ -9,7 +9,7 @@ function ContactSection() {
   return (
     <Container
       component="section"
-      sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', my: 20 }}
+      sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', my: 20, mb:0 }}
     >
       <Button
         sx={{

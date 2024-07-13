@@ -14,7 +14,7 @@ const WhyBambooRoot = styled('section')(({ theme }) => ({
   [theme.breakpoints.up('sm')]: {
     flexDirection: 'row', // Arrange side by side on larger screens
     minHeight: 900,
-    maxHeight: 1500,
+    maxHeight: 1800,
   },
 }));
 
@@ -27,7 +27,7 @@ const WhyBamboo = () => {
 
   return (
     <WhyBambooRoot>
-      <FadeInComponent>
+    <FadeInComponent>
 
     <Box sx={{ textAlign: 'center', mb: 15, position: 'relative', p: 2 }}>
     <Typography variant="h3" sx={{ color: 'primary.main', fontWeight: 'bold', fontSize: '2.5rem' }}>
