@@ -31,7 +31,7 @@ const OurCreationPage = () => {
             <NavBar />
             <ClassicBanner scrollToProductPage={scrollToProductPage} />
             
-            <Container maxWidth="lg" ref={productPageRef}>       
+            <Container maxWidth="lg" ref={productPageRef}>     
             <ClassicProductPage/>
             </Container>
             <AppFooter />
