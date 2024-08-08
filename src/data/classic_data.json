@@ -1,30 +1,111 @@
 [
     {
       "id": 1,
-      "image": "image_url_1",
-      "title": "Natural Wood Basic Starter Pack",
+      "image": "/product/Natural Wood Fine Grooves.JPG",
+      "title": "Natural Wood Fine Grooves",
       "color": "Natural Wood",
       "pattern": "Fine Grooves",
       "size": "18mm × 250mm × 1800mm",
-      "price": "399"
+      "price": "1399"
     },
     {
       "id": 2,
-      "image": "image_url_2",
-      "title": "Light Coffee Premium Suit",
+      "image": "/product/Natural Wood Prominent Waves.JPG",
+      "title": "Natural Wood Prominent Waves",
+      "color": "Natural Wood",
+      "pattern": "Prominent Waves",
+      "size": "25mm × 250mm × 1800mm",
+      "price": "1399"
+    },
+    {
+      "id": 3,
+      "image": "/product/Natural Wood Subtle Waves.JPG",
+      "title": "Natural Wood Subtle Waves",
+      "color": "Natural Wood",
+      "pattern": "Subtle Waves",
+      "size": "25mm × 250mm × 1800mm",
+      "price": "1399"
+    },
+    {
+      "id": 4,
+      "image": "/product/Natural Wood Smooth Surface.jpg",
+      "title": "Natural Wood Smooth Surface",
+      "color": "Natural Wood",
+      "pattern": "Smooth Surface",
+      "size": "25mm × 250mm × 1800mm",
+      "price": "1399"
+    },
+    {
+      "id": 5,
+      "image": "/product/Light coffee Fine Grooves.JPG",
+      "title": "Light coffee Fine Grooves",
+      "color": "Light coffee",
+      "pattern": "Fine Grooves",
+      "size": "25mm × 250mm × 1800mm",
+      "price": "1399"
+    },
+    {
+      "id": 6,
+      "image": "/product/Light Coffee Prominent Waves.JPG",
+      "title": "Light Coffee Prominent Waves",
       "color": "Light Coffee",
       "pattern": "Prominent Waves",
       "size": "25mm × 250mm × 1800mm",
       "price": "1399"
     },
     {
-        "id": 3,
-        "image": "image_url_2",
-        "title": "Light Coffee Premium Suit",
-        "color": "Light Coffee",
-        "pattern": "Prominent Waves",
-        "size": "25mm × 250mm × 1800mm",
-        "price": "1399"
-      }
+      "id": 7,
+      "image": "/product/Light Coffee Subtle Waves.jpg",
+      "title": "Light Coffee Subtle Waves",
+      "color": "Light Coffee",
+      "pattern": "Subtle Waves",
+      "size": "25mm × 250mm × 1800mm",
+      "price": "1399"
+    },
+    {
+      "id": 8,
+      "image": "/product/Light Coffee Smooth Surface.jpg",
+      "title": "Light Coffee Smooth Surface",
+      "color": "Light Coffee",
+      "pattern": "Smooth Surface",
+      "size": "25mm × 250mm × 1800mm",
+      "price": "1399"
+    },
+    {
+      "id": 9,
+      "image": "/product/Dark Charcoal Fine Grooves.jpg",
+      "title": "Dark Charcoal Fine Grooves",
+      "color": "Dark Charcoal",
+      "pattern": "Fine Grooves",
+      "size": "25mm × 250mm × 1800mm",
+      "price": "1399"
+    },
+    {
+      "id": 10,
+      "image": "/product/Dark Charcoal Prominent Waves.JPG",
+      "title": "Dark Charcoal Prominent Waves",
+      "color": "Dark Charcoal",
+      "pattern": "Prominent Waves",
+      "size": "25mm × 250mm × 1800mm",
+      "price": "1399"
+    },
+    {
+      "id": 11,
+      "image": "/product/Dark Charcoal Subtle Waves.jpg",
+      "title": "Dark Charcoal Subtle Waves",
+      "color": "Dark Charcoal",
+      "pattern": "Subtle Waves",
+      "size": "25mm × 250mm × 1800mm",
+      "price": "1399"
+    },
+    {
+      "id": 12,
+      "image": "/product/Dark Charcoal Smooth Surface.jpg",
+      "title": "Dark Charcoal Smooth Surface",
+      "color": "Dark Charcoal",
+      "pattern": "Smooth Surface",
+      "size": "25mm × 250mm × 1800mm",
+      "price": "1399"
+    }
   ]
   

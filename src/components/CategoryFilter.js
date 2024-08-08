@@ -27,6 +27,10 @@ function CategoryFilter({ onFilterChange }) {
               control={<Checkbox onChange={handleCheckboxChange('color', 'Dark Charcoal')} />}
               label="Dark Charcoal"
             />
+            <FormControlLabel
+              control={<Checkbox onChange={handleCheckboxChange('color', 'Other')} />}
+              label="Other"
+            />
           </FormGroup>
         </AccordionDetails>
       </Accordion>
